@@ -18,12 +18,19 @@ This repository presents a qualitative and statistically grounded comparison of 
 - **Metropolis Monte Carlo (TM)**  
   Polymer configurations are sampled via a Markov chain with equilibrium weighting:
   
-  $$
-  P_{\mathrm{acc}} = \min\!\left(1, \frac{\pi(X')\,q(X \mid X')}{\pi(X)\,q(X' \mid X)}\right),
-  \qquad
-  \pi(X) \propto e^{-\beta E(X)}
-  $$
+$$
+P_{\mathrm{acc}} = \min\left(1, \frac{\pi(X')\,q(X \mid X')}{\pi(X)\,q(X' \mid X)}\right)
+$$
 
+$$
+\pi(X) \propto e^{-\beta E(X)}
+$$
+
+where,
+
+$\pi(X)$ is the equilibrium probability of configuration $X$,  
+$E(X)$ is the corresponding energy, and $\beta = 1/(k_B T)$.
+  
 The project is designed as a **learning-focused, method-comparison study**, with emphasis on understanding how different stochastic sampling strategies influence measured polymer statistics such as radius of gyration ($R_g$), end-to-end distance ($ee$), and scaling behaviour (eq
 shown below).
 
