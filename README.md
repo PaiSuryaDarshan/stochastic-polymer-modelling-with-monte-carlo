@@ -17,6 +17,7 @@ This repository presents a qualitative and statistically grounded comparison of 
 
 - **Metropolis Monte Carlo (TM)**  
   Polymer configurations are sampled via a Markov chain with equilibrium weighting:
+  
   $$
   P_{\mathrm{acc}} = \min\!\left(1, \frac{\pi(X')\,q(X \mid X')}{\pi(X)\,q(X' \mid X)}\right),
   \qquad
